@@ -1,0 +1,6 @@
+alert('Salut JavaScript!')
+window.alert('Salut')
+confirm('Vreau sa castige Portugalia')
+console.log('Mesaj in consola')
+console.info('Info status')
+console.error('Eroare fatala')
