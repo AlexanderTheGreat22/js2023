@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmultire</title>
+</head>
+<body>
+    <script>
+        function inmultire(a, b){
+           return a * b; 
+        }
+        function adunare(n, m=0){
+            return x + y;
+        }
+
+        function scadere(n, m){
+            if(n < m){
+                   return n - m;
+            }
+            else{
+                   return n - m;
+            }
+        }
+        function impartire(n, m){
+            if(n < m){
+                   return parseInt (m / n);
+            }
+            else{
+                   return parseInt (n / m);
+            }
+        }
+        let x = eval(prompt('Primul numar este', 2));
+        let y = eval(prompt('Al doilea numar este', 4));
+        let op = 'a';
+        let operatie = eval(prompt('Operatia efectuata este: a- adunare, s- scadere, im- impartire, in- inmultire'));
+        alert(operatie);
+        if(operatie == 'a'){
+            console.log('Rezultatul adunarii este', adunare(x, y))
+        }
+        if(operatie == 's'){
+            console.log('Rezultatul scaderii este', scadere(x,y))
+        }
+
+
+
+        // console.log(inmultire(5, 4));
+        // let x = 20, y = 22;
+        // console.log(`adunarea dintre ${x} si ${y} este`, impartire(20, 22))
+    </script>
+</body>
+</html>
