@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sursa">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quos enim ratione dolor cupiditate doloribus, deserunt suscipit laborum? Dolorum ducimus sit ex veniam praesentium quis sed architecto sunt. Aliquid, sunt.
+        numar de telefon 0761794079 sau 0760804000. Numarul lui Ghiula este +40 0355241513. 
+    </p>
+    <p id="destinatie"></p>
+    <script>
+        let sursa = document.getElementById('sursa').innerHTML;
+        console.log(sursa);
+        let pattern = /[\+]?[0-9\s]{10,13}/g;
+        let result = sursa.match(pattern);
+        document.getElementById("destinatie").innerHTML = result;
+
+        // let result2 = sursa.matchAll(pattern);
+        // console.log(Array.from(result2));
+
+    </script>
+</body>
+</html>
